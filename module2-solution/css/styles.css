@@ -1,188 +1,111 @@
-body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
-}
+ * {
+            box-sizing: border-box;
+        }
 
-/** HEADER **/
-#header-nav {
-  background-color: #EEE8AA;
-  color:red;
-  border-radius: 0;
-  border: 0;
-}
+        h3 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
 
+        .innerdv {
+            padding: 10px;
+            float: left;
+        }
 
+        .sphead1 {
+            float: right;
+            padding: 2px 24px;
+            font-weight: 600;
+            border: 2px solid black;
+            border-width: 0px 0px 2px 2px;
+            border-radius: 2px;
+            background-color: #d8acb4;
+            font-family: century gothic;
+            font-size: 13px;
+        }
 
-#nav-list {
-  margin-top: 10px;
-}
+        .sphead2 {
+            float: right;
+            padding: 2px 42px;
+            font-weight: 600;
+            border: 2px solid black;
+            border-width: 0px 0px 2px 2px;
+            border-radius: 2px;
+                background-color: #bf3636;
+    font-family: century gothic;
+    font-size: 13px;
+    color: whitesmoke;
+        }
 
-
-.navbar-header div.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-}
-.navbar-header div.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-
-#chicken-tile, #beef-tile, #sushi-tile {
-  height: 250px;
-  width: 100%;
-  margin-right 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-}
-
-#chicken-tile:hover, #beef-tile:hover, #sushi-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-
-#chicken-tile {
-  
-  background-position: center;
-}
-#beef-tile {
-  
-  background-position: center;
-}
-#sushi-tile {
-  
-  background-position: center;
-}
-#chicken-tile span , #beef-tile span , #sushi-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-}
-#chicken-tile div div , #beef-tile div div , #sushi-tile div div {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-}
-.page-header h1
-{
-  color: white;
-}
-.col-md-4 span 
-{
-  position: absolute;
-  top: 0;
-
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-}
-.col-sm-6 span
-{
-position: absolute;
- top:0;
-
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-}
-.col-md-4 col-sm-6 col-xs-12 span
-{
-position: absolute;
-  bottom : 0;
-
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;  
-}
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
- 
-  /* End Header */
-}
-
-/********** Small devices only **********/
-@media (max-width: 768px) and (min-width: 991px) {
-   
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
-  }
+        .sphead3 {
+            float: right;
+            padding: 2px 36px;
+            font-weight: 600;
+            border: 2px solid black;
+            border-width: 0px 0px 2px 2px;
+            border-radius: 2px;
+            background-color: #effb91;
+            font-family: century gothic;
+            font-size: 13px;
+        }
 
 
-}
 
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* Star-K */
-    height: 20px;
-  }
+        /* Simple Responsive Framework. */
+        .row {
+            width: 100%;
+        }
+        /********** Desktop devices only **********/
+        @media (min-width: 992px) {
 
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
-  }
- #chicken-tile, #sushi-tile,#beef-tile {
-    width: 360px;
-    margin: 0 auto 15px;
-  }
- 
-  /* End Header */
 
-}
+            .p1, .p2, .p3 {
+                width: 30%;
+                float: left;
+                border-radius: 3px;
+                border: 2px solid #272727;
+                margin: 1%;
+                background-color: #b3b3ea;
+            }
+        }
+        /********** Tablet devices only **********/
+        @media (min-width: 768px) and (max-width: 991px) {
+
+
+            .p1 {
+                width: 47%;
+                float: left;
+                border-radius: 3px;
+                border: 2px solid #272727;
+                margin: 1%;
+                background-color: #b3b3ea;
+            }
+
+            .p2 {
+                width: 47%;
+                float: left;
+                border-radius: 3px;
+                border: 2px solid #272727;
+                margin: 1%;
+                background-color: #b3b3ea;
+            }
+
+            .p3 {
+                width: 98%;
+                float: left;
+                border-radius: 3px;
+                border: 2px solid #272727;
+                margin: 1%;
+                background-color: #b3b3ea;
+            }
+        }
+        /********** Mobile devices only **********/
+        @media (max-width: 767px) {
+            .p1, .p2, .p3 {
+                border-radius: 3px;
+                border: 2px solid #272727;
+                margin: 1%;
+                float:left;
+                background-color: #b3b3ea;
+            }
+        }
